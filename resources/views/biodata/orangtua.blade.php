@@ -1,35 +1,35 @@
 <div>
-    <!-- Do what you can, with what you have, where you are. - Theodore Roosevelt -->
+    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
     <br>
     <br>
     <table border="1" align="center">
         <tr align="center">
             <td colspan="3" align="center">
-                BIODATA
+                {{ $judul }}
             </td>
         </tr>
         <tr>
             <td>Nama</td>
-            <td>Somadani</td>
+            <td> {{ $bapak }}</td>
             <td rowspan="7">
-                <img src="img/bapak.jpg" height="auto" width="150">
+                <img src="{{ asset('img/bapak.jpg') }}" height="auto" width="150">
             </td>
         </tr>
         <tr>
             <td>Tempat, Tanggal Lahir</td>
-            <td>Sampang, 27 Juni 1977</td>
+            <td> {{ $ttl_b }} </td>
         </tr>
         <tr>
             <td>Pekerjaan</td>
-            <td>Wiraswasta</td>
+            <td> {{ $kerja_b }} </td>
         </tr>
         <tr>
             <td>Alamat</td>
-            <td>Jl.Aji Gunung 1</td>
+            <td> {{ $alamat }} </td>
         </tr>
         <tr>
             <td>No.Telepon</td>
-            <td>081935921316</td>
+            <td> {{ $hp }} </td>
         </tr>
     </table>
     <br><br>
@@ -37,31 +37,31 @@
     <table border="1" align="center">
         <tr align="center">
             <td colspan="3" align="center">
-                BIODATA
+                {{ $judul }}
             </td>
         </tr>
         <tr>
             <td>Nama</td>
-            <td>Dewi Amina</td>
+            <td>{{ $ibu }}</td>
             <td rowspan="7">
-                <img src="img/ibu.jpg" height="auto" width="150">
+                <img src="{{ asset('img/ibu.jpg') }}" height="auto" width="150">
             </td>
         </tr>
         <tr>
             <td>Tempat, Tanggal Lahir</td>
-            <td>Sampang, 25 Mei 1983</td>
+            <td>{{ $ttl_i }}</td>
         </tr>
         <tr>
             <td>Pekerjaan</td>
-            <td>Ibu Rumah Tangga</td>
+            <td>{{ $kerja_i }}</td>
         </tr>
         <tr>
             <td>Alamat</td>
-            <td>Jl.Aji Gunung 1</td>
+            <td>{{ $alamat }}</td>
         </tr>
         <tr>
             <td>No.Telepon</td>
-            <td>081935921316</td>
+            <td>{{ $hp }}</td>
         </tr>
     </table>
 </div>
