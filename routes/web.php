@@ -60,7 +60,7 @@ Route::get('/ortu', function () {
     $hp = "081935921316";
     $foto = 'img src="img/bapak.jpg"';
     $foto = 'img src="img/ibu.jpg"';
-    return view('biodata.orangtua', ['judul' => $judul,
+    return view('biodata.ortu', ['judul' => $judul,
         'bapak' => $bapak,
         'ibu' => $ibu,
         'ttl_b' => $ttl_b,
