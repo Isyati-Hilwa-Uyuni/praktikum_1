@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Biodata;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/hilwa', function () {
@@ -76,3 +77,23 @@ Route::get('/smk', function () {
     return view('biodata.smk', ['smk' => $smk]);
     //return view('biodata.data', ['nama' => $nama]);
 });
+
+Route::get('/produk', function () {
+    return view('halaman.produk');
+})->name('produk.index');
+
+Route::get('/pertemuan4/{nama}/{nim}/{alamat}', function ($luqman, $id, $pungging) {
+    return view('biodata.pertemuan4', [
+        'jeneng' => $luqman,
+        'kampus' => $id,
+        'mojokerto' => $pungging
+    ]);
+});
+
+Route::get('/paijo', [Biodata::class, 'index']);
+
+Route::get('/psdku/{nama}/{nim}/{alamat}', [Biodata::class, 'show']);
+
+Route::get('/paijo', [Biodata::class, 'index']);
+
+Route::get('/tampil', [Biodata::class, 'tampil']);
